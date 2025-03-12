@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nethan's Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c594b61d10.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo-small.png" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Aspiring Data Scientist</p>
+            <h1>Hello, I'm <span>Nethan Noel Lobo</span></h1>
+        </div>
+    </div>
+</div>
+<!----------------about----------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png.jpg" alt="user">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I was raised an Army brat which gives me the ability
+                    to adjust to any environment and situation. I think 
+                    fast, I think smart, and can make critical decisions 
+                    at the end moment as required. Having me on your side 
+                    in an emergency will surely be a lifesaver
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('brief-experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Machine Learning</span><br> Extracting meaningful outcomes</li>
+                        <li><span>DBMS</span><br> Managing data using MySQL</li>
+                        <li><span>Data Visualization</span><br> Visualizing hard to understand data</li>
+                        <li><span>Python</span><br> Extensive coding in mathematics and statistics</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="brief-experience">
+                    <ul>
+                        <li><span>March 2025</span><br> Student Coordinator of Intra-departmental fest Inflectra</li>
+                        <li><span>September 2024</span><br> Core Committee member for Science week fests</li>
+                        <li><span>May 2024</span><br> Mathematical Modeling Summer School</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>IInd year(3rd Semester)</span><br> 2nd place in course</li>
+                        <li><span>Ist year</span><br> Overall 1st rank holder of BScDM course</li>
+                        <li><span>12th grade</span><br> 89.71 overall score, with 99% in I.P.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------services--------------------->
+<div class="services">
+    <div class="container">
+        <h1 class="sub-title">My Experiences</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-square-poll-vertical"></i>
+                <h2>StaDa U.G. Rep</h2>
+                <p>As the undergraduate representative of my department, I have organised and handled
+                multiple projects. I oversee all student-coordinated activities of the department,
+                and ensure that the department never goes unnoticed in inter-department events </p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-headset"></i>
+                <h2>CUIE Sentinel</h2>
+                <p>Recently joined the pan university club Christ University Interactive Entertainment
+                 that is in-charge of organising all Esports events in Central Campus. This club has been 
+                 founded in 2024 itself, and I am very proud to be part of the first chapter of it.
+                     </p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-calendar"></i>
+                <h2>Group Peer Trainer at CAPS</h2>
+                <p>I have been a part of GPT since the beginning of my college days, and it has led me
+                to newer horizons, training other students on vital skills for their future, while also 
+                building mine for my career
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------portfolio-------------------->
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Data Visualization Project</h3>
+                    <p>In my 3rd semester, I undertook a Data Visualization project 
+                        which required me to provide detailed information regarding 
+                        a census dataset, to a well known company 'Nestle'
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Machine Learning: Python </h3>
+                    <p>Currently, while also learning ML, I am working on multiple
+                        Machine Learning projects, working with different classification
+                        and clustering algorithms for extensive datasets
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>DBMS</h3>
+                    <p>Exploring further of DBMS in my 2nd semester, I created a
+                        database to track the information and data that passes through
+                        a university. 
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!---------------contact--------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>n3thanlobo12@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9515256934</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/n3thannn/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/nethan-lobo/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/N3thannn"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/resume-nethanlobo.pdf" download class="btn btn2">Download CV/Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheets">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"> </span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Nethan Noel Lobo <i class="fa-solid fa-lightbulb"></i>
+        </p>
+    </div>
+</div>
+
+<!-- ------------Javascript---------------- -->
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxDV4yF377KILGC71uL6fg1RxsQwZMpR1CupW9P45AdWGvD13nWU9-LKzWkK2gnXEcz/exec'
+    const form = document.forms['submit-to-google-sheets']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
